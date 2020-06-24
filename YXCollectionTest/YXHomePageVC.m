@@ -7,7 +7,7 @@
 //
 
 #import "YXHomePageVC.h"
-#import <FramewortTest/YXWaterFallLayout.h>
+#import "YXWaterFallLayout.h"
 #import "CollectionViewCell.h"
 
 @interface YXHomePageVC () <UICollectionViewDelegate, UICollectionViewDataSource, YXWaterFallLayoutDataSource>
@@ -29,6 +29,7 @@
 //    layout.pinSectionHeadersArr = [[NSMutableArray alloc] initWithObjects:@"1", nil];
     
     _collectionView = [[UICollectionView alloc] initWithFrame:self.view.bounds collectionViewLayout:layout] ;
+    
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
     _collectionView.backgroundColor = [UIColor whiteColor];
@@ -43,12 +44,12 @@
 #pragma mark - <UICollectionViewDataSource>
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
     
-    return 2;
+    return 1;
 }
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
     
     if (section == 0) {
-        return 2;
+        return 0;
     }
     return 4;
 }
@@ -108,7 +109,7 @@
     
     return UIEdgeInsetsMake(40, 15, 0, 15);
 }
-- (NSInteger)collectionView:(UICollectionView *)collectionView layout:(YXWaterFallLayout *)collectionViewLayout lineSpacingForSectionAtIndex:(NSInteger)section {
+- (CGFloat)collectionView:(UICollectionView *)collectionView layout:(YXWaterFallLayout *)collectionViewLayout lineSpacingForSectionAtIndex:(NSInteger)section {
     
     return 10;
 }
@@ -129,7 +130,7 @@
 }
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(YXWaterFallLayout *)collectionViewLayout referenceSizeForFooterInSection:(nonnull NSIndexPath *)indexPath {
     
-    return CGSizeMake(self.view.frame.size.width, 40);
+    return CGSizeMake(self.view.frame.size.width, 667);
 }
 
 @end

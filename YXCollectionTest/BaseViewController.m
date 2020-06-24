@@ -23,7 +23,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    _dataSourceArr = [[NSMutableArray alloc] initWithObjects:@"普通collection", @"瀑布流collection", nil];
+    _dataSourceArr = [[NSMutableArray alloc] initWithObjects:@"普通collection", @"瀑布流collection", @"other", nil];
     
     _tableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 64, CGRectGetWidth(self.view.bounds), CGRectGetHeight(self.view.bounds) - 64) style:UITableViewStylePlain];
     _tableView.dataSource = self;
@@ -51,9 +51,12 @@
         NormalCollectionViewController *vc = [[NormalCollectionViewController alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
     }
-    else {
+    else if (indexPath.row == 1) {
         YXHomePageVC *vc = [[YXHomePageVC alloc] init];
         [self.navigationController pushViewController:vc animated:YES];
+    }
+    else {
+        
     }
 }
 

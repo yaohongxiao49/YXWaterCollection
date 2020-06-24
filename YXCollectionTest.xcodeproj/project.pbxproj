@@ -13,6 +13,7 @@
 		84397C422338713B00B889DF /* FramewortTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84397C412338713B00B889DF /* FramewortTest.framework */; };
 		84A37917231623F6000C0ED6 /* debug_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84A37916231623F6000C0ED6 /* debug_config.plist */; };
 		84A3791923162638000C0ED6 /* dev_config.sh in Resources */ = {isa = PBXBuildFile; fileRef = 84A3791823162638000C0ED6 /* dev_config.sh */; };
+		84AB162C24A30330002BB6A2 /* YXWaterFallLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 84AB162B24A30330002BB6A2 /* YXWaterFallLayout.m */; };
 		84F6D3F62282C084004D30D4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 84F6D3F52282C084004D30D4 /* AppDelegate.m */; };
 		84F6D3FC2282C084004D30D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84F6D3FA2282C084004D30D4 /* Main.storyboard */; };
 		84F6D3FE2282C086004D30D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F6D3FD2282C086004D30D4 /* Assets.xcassets */; };
@@ -50,6 +51,8 @@
 		84397C412338713B00B889DF /* FramewortTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FramewortTest.framework; sourceTree = "<group>"; };
 		84A37916231623F6000C0ED6 /* debug_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = debug_config.plist; sourceTree = "<group>"; };
 		84A3791823162638000C0ED6 /* dev_config.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = dev_config.sh; sourceTree = "<group>"; };
+		84AB162A24A30330002BB6A2 /* YXWaterFallLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YXWaterFallLayout.h; sourceTree = "<group>"; };
+		84AB162B24A30330002BB6A2 /* YXWaterFallLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YXWaterFallLayout.m; sourceTree = "<group>"; };
 		84F6D3F12282C084004D30D4 /* YXCollectionTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YXCollectionTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F6D3F42282C084004D30D4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		84F6D3F52282C084004D30D4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -138,6 +141,8 @@
 				84F6D42D2282CA29004D30D4 /* YXHomePageVC.m */,
 				00B1217222832139003F1A81 /* CollectionViewCell.h */,
 				00B1217322832139003F1A81 /* CollectionViewCell.m */,
+				84AB162A24A30330002BB6A2 /* YXWaterFallLayout.h */,
+				84AB162B24A30330002BB6A2 /* YXWaterFallLayout.m */,
 				84F6D3FA2282C084004D30D4 /* Main.storyboard */,
 				84F6D3FD2282C086004D30D4 /* Assets.xcassets */,
 				84F6D3FF2282C086004D30D4 /* LaunchScreen.storyboard */,
@@ -302,6 +307,7 @@
 				00B1217422832139003F1A81 /* CollectionViewCell.m in Sources */,
 				84F6D42E2282CA29004D30D4 /* YXHomePageVC.m in Sources */,
 				84F6D3F62282C084004D30D4 /* AppDelegate.m in Sources */,
+				84AB162C24A30330002BB6A2 /* YXWaterFallLayout.m in Sources */,
 				003AD5E922CEC1E3000C82A0 /* NormalCollectionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
